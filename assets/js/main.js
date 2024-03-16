@@ -3,13 +3,14 @@ let desktopMenu = document.getElementById('desktop-menu');
 
 mobileMenu.addEventListener('click', function() {
     
-    if (desktopMenu.style.display === 'none') {
+    if (desktopMenu.style.display != 'flex') {
         desktopMenu.style.display = 'flex';
         mobileMenu.src = './assets/images/menu_open.svg';
     } else {
-        desktopMenu.style.display = 'none';
+        desktopMenu.style.display = '';
         mobileMenu.src = './assets/images/menu_closed.svg';
     }
+    
 });
 
 window.addEventListener('resize', function() {
