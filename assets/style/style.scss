@@ -77,25 +77,6 @@ main {
         justify-content: space-evenly;
         align-items: center;
 
-        button {
-            padding: 10px 25px;
-            margin-top: 10px;
-            border-radius: 0.5em;
-            border: none;
-            font-weight: 600;
-        }
-
-        button:hover {
-            background-color: #f72585;
-            color: $font-color;
-            transition: 150ms ease-in;
-        }
-
-        button:active {
-            transform: translate(0, 5px);
-            transition: 650ms ease-in-out;
-        }
-
         h1 {
             font-size: 4rem;
         }
@@ -105,7 +86,7 @@ main {
         }
 
         a img {
-            width: 40px;
+            width: 30px;
             margin-top: 10px;
         }
 
@@ -113,17 +94,22 @@ main {
             filter: invert(100%);
         }
 
-        .align {
+        .align-icon {
             display: flex;
-            align-items: center
+            align-items: center;
+            gap: 15px;
         }
 
-        .margin {
+        .margin-changer {
             margin-top: -25px;
         }
 
-        .color {
+        .color-changer {
             color: #f72585;
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
         }
     }
 
@@ -135,6 +121,20 @@ main {
         img {
             width: 340px;
             border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    main {
+        .img {
+            img {
+                width: 300px;
+            }
         }
     }
 }
