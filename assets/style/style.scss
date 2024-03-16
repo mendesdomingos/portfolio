@@ -138,3 +138,20 @@ main {
         }
     }
 }
+
+// About Page
+
+.about-paragraph {
+    width: 450px;
+}
+
+@media (max-width: 768px) {
+    .about-paragraph {
+        width: 335px;
+        margin-bottom: 20px;
+    }
+
+    .padding-paragraph {
+        padding: 0 !important;
+    }
+}
